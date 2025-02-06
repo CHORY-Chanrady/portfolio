@@ -1,138 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CHORY Chanrady - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHORY Chanrady - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>CHORY Chanrady</h1>
-      <p>IT Professional | Problem Solver | Team Player</p>
-      <nav>
-        <ul id="nav-links">
-          <li><a href="#about" class="active">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="theme-toggle">Toggle Dark Mode</button>
-      </nav>
-    </div>
-  </header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am CHORY Chanrady, a Cambodian IT professional with expertise in IT Asset Management, networking, and software development. 
-        I have a strong foundation in problem-solving, communication, and teamwork, and I am passionate about technology and innovation.
-      </p>
-      <ul>
-        <li><strong>Sex:</strong> Male</li>
-        <li><strong>Nationality:</strong> Cambodian</li>
-        <li><strong>Date of Birth:</strong> 11-March-2002</li>
-        <li><strong>Place of Birth:</strong> Kompong Cham Province</li>
-      </ul>
-    </div>
-  </section>
+<body class="bg-gradient-to-r from-blue-50 to-purple-50 font-poppins">
 
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <button id="toggle-skills">Show/Hide Skills</button>
-      <div id="skill-list" class="skill-list">
-        <div class="skill-item">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>Basic SQL Server</li>
-            <li>Basic Linux OS</li>
-            <li>Basic Windows Server</li>
-            <li>Programming: C, C++, C#, Java, HTML, CSS, JavaScript, PHP</li>
-            <li>Basic Networking</li>
-            <li>Microsoft Office, Outlook, Email, Office 365</li>
-          </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-8">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#professional-summary">Professional Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#languages">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#References">References</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="skill-item">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Problem Solving</li>
-            <li>Communication</li>
-            <li>Time Management</li>
-            <li>Teamwork</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <section id="experience" class="section">
-    <div class="container">
-      <h2>Work Experience</h2>
-      <div class="job">
-        <h3>IT Asset Management QA Supervisor</h3>
-        <p><strong>Advanced Bank of Asia Limited (ABA Bank)</strong> | Jan 2023 - Present</p>
-        <ul>
-          <li>Ensure IT team processes follow standard procedures and policies.</li>
-          <li>Coordinate with infrastructure teams in Cambodia and Thailand for server onboarding.</li>
-          <li>Register, update, and dispose of VM servers in ITSM systems.</li>
-          <li>Prepare monthly, quarterly, and annual reports for top management.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>IT Service Desk (Intern)</h3>
-        <p><strong>Woori Bank Cambodia</strong> | July 2022 - Jan 2023</p>
-        <ul>
-          <li>Check and maintain network issues.</li>
-          <li>Setup PCs, printers, and troubleshoot software/hardware problems.</li>
-          <li>Guide new users and monitor computer security.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <div class="container mx-auto p-4">
+        <!-- Header Section -->
+        <header class="text-center mb-8 py-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-lg">
+            <!-- Profile Photo -->
+            <img src="chorychanrady.jpg" alt="CHORY Chanrady" class="w-48 h-48 rounded-full mx-auto mb-4">
+            <h1 class="text-4xl font-bold text-white">CHORY Chanrady</h1>
+        </header>
+        
+        <!-- Contact Information Section -->
+        <section id="contact" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Contact Information</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li><strong>Address:</strong> st 271, Oh Bek'orm, Saen Sok, Phnom Penh</li>
+                <li><strong>Phone:</strong> 010 346 085</li>
+                <li><strong>Telegram:</strong> @chorychanrady</li>
+                <li><strong>Email:</strong> Chorychanrady168@gmail.com</li>
+            </ul>
+        </section>
 
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="edu-item">
-        <h3>Master of Computer Science and Technology</h3>
-        <p><strong>Western University</strong></p>
-      </div>
-      <div class="edu-item">
-        <h3>Bachelor of Computer Science</h3>
-        <p><strong>Royal University of Phnom Penh</strong></p>
-      </div>
-      <div class="edu-item">
-        <h3>High School</h3>
-        <p><strong>Bosknor High School, Kompong Cham</strong></p>
-      </div>
-    </div>
-  </section>
+        <!-- Professional Summary Section -->
+        <section id="professional-summary" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Professional Summary</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li><strong>Name :</strong> CHORY Chanrady</li>
+                <li><strong>Sex :</strong> Male</li>
+                <li><strong>Nationality :</strong> Cambodian</li>
+                <li><strong>Marital status :</strong> Single</li>
+                <li><strong>Date of birth :</strong> 11-March-2002</li>
+                <li><strong>Place of birth :</strong> 34 village, Ta Ong Commune, Chomkar Lue District, Kompong Cham province.</li>
+            </ul>
+        </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+        <!-- Skills Section -->
+        <section id="skills" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Technical Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Basic SQL server</li>
+                        <li>Basic Linux OS</li>
+                        <li>Basic Window Server</li>
+                        <li>Basic (C, C++, C#, Java, Html, CSS, JavaScript, PHP)</li>
+                        <li>Basic networking</li>
+                        <li>Microsoft Office</li>
+                        <li>Outlook, Email, Office 365</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Soft Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Problem Solving</li>
+                        <li>Communication</li>
+                        <li>Time Management</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 CHORY Chanrady. All rights reserved.</p>
-    </div>
-  </footer>
+        <!-- Work Experience Section -->
+        <section id="experience" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Work Experience</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Advanced Bank of Asia Limited. (ABA Bank)</h3>
+                    <p class="text-gray-600">IT Asset Management QA Supervisor | 23.January.2023 – Present</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Ensure IT team process follow standard procedure, policy, memo … that approved by management and bank’s committee.</li>
+                        <li>Review latest changes in IT policies, procedures, standards of IT teams.</li>
+                        <li>Coordinate with infrastructure team both Cambodia and Thailand to resolve issue of new server onboarding.</li>
+                        <li>Register new VM server onboard into ITSM system.</li>
+                        <li>Update information of VM server on ITSM system.</li>
+                        <li>Disposed VM server on ITSM for offboard server.</li>
+                        <li>Provide accurate VM servers to related team.</li>
+                        <li>Work with ICT team to ensure all device are control by ICT tools.</li>
+                        <li>Prepare report monthly, quarterly, semi year, annual to get approval from top management.</li>
+                        <li>Maintain report review of related team.</li>
+                        <li>Ensure all IT Assets are under well control.</li>
+                        <li>Daily response to related team as they need.</li>
+                        <li>Daily resolve the issue with related team.</li>
+                        <li>Other task that assigned by line manager.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Woori Bank Cambodia</h3>
+                    <p class="text-gray-600">IT Service Desk (Intern) | 18.July.2022 - 17.January.2023</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Check network problem.</li>
+                        <li>Maintenance network.</li>
+                        <li>Monitoring for user when have any problem.</li>
+                        <li>Setup PC for new user.</li>
+                        <li>Setup and prepare computer when have any problem with software and some hardware.</li>
+                        <li>Monitoring for security of computer.</li>
+                        <li>Setup printer for user.</li>
+                        <li>Prepare computer that writhed off.</li>
+                        <li>Guide for new user to user new computer.</li>
+                        <li>Work with teams work to resolve the problem from user.</li>
+                        <li>Help teams work do something.</li>
+                        <li>Other task assigned by line manager.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Lucky Private Limited Co Ltd.</h3>
+                    <p class="text-gray-600">Confidential Admin | 17.May.2021-2022</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Response for report relate with staff.</li>
+                        <li>Train new staff.</li>
+                        <li>Manage weekly report.</li>
+                        <li>Manage monthly report.</li>
+                        <li>Prepare template for weekly promotion and monthly promotion.</li>
+                        <li>Do inventory for count stock at store.</li>
+                        <li>Count stock to order stationary.</li>
+                        <li>Other task assigned by store manager.</li>
+                    </ul>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-purple-600">Park Café food and beverage Co Ltd.</h3>
+                  <p class="text-gray-600">Management Trainee | 2019-2020</p>
+                  <ul class="list-disc list-inside text-gray-700">
+                      <li>Manage staff by shift.</li>
+                      <li>Set schedule for all staff.</li>
+                      <li>Manage for operation in restaurant.</li>
+                      <li>Set schedule for all staff.</li>
+                      <li>Report problems to management.</li>
+                      <li>Prepare revenue as per day to deposit in bank.</li>
+                      <li>Prepare schedule for staff’s day off.</li>
+                      <li>Other task assigned by area manager.</li>
+                  </ul>
+                </div>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+        <!-- Education Section -->
+        <section id="education" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Education</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Western University</h3>
+                    <p class="text-gray-600">Master of Computer Science and Technology | August 2024 - Present</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Royal University of Phnom Penh</h3>
+                    <p class="text-gray-600">Bachelor of Computer Science | 01.April.2021 - 21.May.2024</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Bosknor High School, Kompong Cham</h3>
+                    <p class="text-gray-600">High School | 2013 - 2019</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Svay Meas Primary School, Kompong Cham</h3>
+                    <p class="text-gray-600">Primary School | 2007 - 2013</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">Languages</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Khmer - Mother Tongue</li>
+                <li>English - Medium</li>
+            </ul>
+        </section>
+
+        <!-- References Section -->
+        <section id="References" class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600">References</h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Mr. Chea Sanmang</h3>
+                    <p class="text-gray-600">Lecturer | Tel: +855 12 505 666</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-600">Mr. Var Sovannadara</h3>
+                    <p class="text-gray-600">Lecturer | Tel: +855 12 444 012</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
 </body>
 </html>
