@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHORY Chanrady - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>CHORY Chanrady</h1>
+      <p>IT Professional | Problem Solver | Team Player</p>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am CHORY Chanrady, a Cambodian IT professional with expertise in IT Asset Management, networking, and software development. 
+        I have a strong foundation in problem-solving, communication, and teamwork, and I am passionate about technology and innovation.
+      </p>
+      <ul>
+        <li><strong>Sex:</strong> Male</li>
+        <li><strong>Nationality:</strong> Cambodian</li>
+        <li><strong>Date of Birth:</strong> 11-March-2002</li>
+        <li><strong>Place of Birth:</strong> Kompong Cham Province</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <button id="toggle-skills">Show/Hide Skills</button>
+      <div id="skill-list" class="skill-list">
+        <div class="skill-item">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Basic SQL Server</li>
+            <li>Basic Linux OS</li>
+            <li>Basic Windows Server</li>
+            <li>Programming: C, C++, C#, Java, HTML, CSS, JavaScript, PHP</li>
+            <li>Basic Networking</li>
+            <li>Microsoft Office, Outlook, Email, Office 365</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <h3>IT Asset Management QA Supervisor</h3>
+        <p><strong>Advanced Bank of Asia Limited (ABA Bank)</strong> | Jan 2023 - Present</p>
+        <ul>
+          <li>Ensure IT team processes follow standard procedures and policies.</li>
+          <li>Coordinate with infrastructure teams in Cambodia and Thailand for server onboarding.</li>
+          <li>Register, update, and dispose of VM servers in ITSM systems.</li>
+          <li>Prepare monthly, quarterly, and annual reports for top management.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>IT Service Desk (Intern)</h3>
+        <p><strong>Woori Bank Cambodia</strong> | July 2022 - Jan 2023</p>
+        <ul>
+          <li>Check and maintain network issues.</li>
+          <li>Setup PCs, printers, and troubleshoot software/hardware problems.</li>
+          <li>Guide new users and monitor computer security.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>Master of Computer Science and Technology</h3>
+        <p><strong>Western University</strong></p>
+      </div>
+      <div class="edu-item">
+        <h3>Bachelor of Computer Science</h3>
+        <p><strong>Royal University of Phnom Penh</strong></p>
+      </div>
+      <div class="edu-item">
+        <h3>High School</h3>
+        <p><strong>Bosknor High School, Kompong Cham</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 CHORY Chanrady. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
